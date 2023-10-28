@@ -1,0 +1,81 @@
+-- GLOBAL
+git config --global user.name
+git config --global user.name "Hamit Mizrak"
+
+git config --global user.email
+git config --global user.email "hamitmizrak@gmail.com"
+
+git config --global core.editor notepad++
+git config --global -l 
+git config --global -e
+------------------------------------------------------
+
+git init
+git status
+git add .
+git rm --cached  main.txt
+
+git commit -m "1.commit"
+git commit -a -m "bu komut hem add hem commit"
+git commit --amend -m "Son komit ismini değiştirdim"
+git commit --amend -m "1.commit"
+
+git log
+git branch -M main
+git remote add origin https://github.com/hamitmizrak/git_tutorials2.git
+git remote 
+git branch
+git push -uf origin main
+
+------------------------------------------------------
+-- DIFFERENT
+git diff commitID otherCommitID
+git diff 1f307077c613c38e6fae3d615ce347948966aa33 4003ac781e7a3c21a7a77e578787a1fe4b03c964
+
+------------------------------------------------------
+git pull 
+git fetch
+
+------------------------------------------------------
+-- GITIGNORE 
+cat >> .gitignore
+secret.txt
+
+------------------------------------------------------
+-- STASH 
+git add .
+git stash
+git stash list 
+git stash pop
+git stash apply stash@{0}
+
+------------------------------------------------------
+-- ALIAS 
+git log --decorate --oneline --graph --all
+git config --global alias.log44 "log --decorate --oneline --graph --all"
+git log44
+
+------------------------------------------------------
+
+
+------------------------------------------------------
+
+
+------------------------------------------------------
+
+
+------------------------------------------------------
+
+
+------------------------------------------------------
+
+
+------------------------------------------------------
+
+
+------------------------------------------------------
+
+
+------------------------------------------------------
+
+
