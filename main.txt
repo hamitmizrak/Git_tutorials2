@@ -56,8 +56,19 @@ git config --global alias.log44 "log --decorate --oneline --graph --all"
 git log44
 
 ------------------------------------------------------
+git branch 
+git branch -a 
+git branch -r 
+git branch -v 
+git branch frontend
+git checkout frontend 
 
-
+git branch -D frontend 
+git checkout -b backend
+git checkout master
+git merge backend 
+git merge --no-ff frontend  
+git merge squash frontend  
 ------------------------------------------------------
 
 
